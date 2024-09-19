@@ -34,7 +34,7 @@
                 <div class="flex justify-center pt-8 sm:justify-start sm:pt-0 dark:text-white">
                     @auth
                         <div class="text-center">
-                            <a href="{{ url('/notes') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Show my notes</a>
+                            <a href="{{ route('notes.index') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Show my notes</a>
                         </div>
                     @else
                         {{ __('To use the notes app, please register or sign in') }}
